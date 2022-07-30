@@ -1,0 +1,24 @@
+/* Start Variables */
+
+/* End Variables */
+/* Start Global Rules */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+/* End Global Rules */
+.parent {
+    background-color: #eee;
+}
+.container {
+    max-width: 800px;
+    background-color: #ccc;
+    padding: 0px 1.5rem;
+    margin: 0px auto;
+}
