@@ -4,12 +4,14 @@
     --secondary-color: #2c4755;
     --section-padding: 6rem;
     --section--background: #f6f6f6;
+    --transation-duration: 0.3s;
 }
 /* End Variables */
 /* Start Global Rules */
 html {
     box-sizing: border-box;
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 *, *::before, *::after {
     box-sizing: inherit;
@@ -74,7 +76,7 @@ body {
     background-color: #333;
     margin-bottom: 0.5rem;
     height: 2px;
-    transition: transform 500ms ease-in-out;
+    transition: transform var(--transation-duration) ease-in-out;
     
 }
 .links .icon span:nth-child(1) {
@@ -82,7 +84,7 @@ body {
 }
 .links .icon span:nth-child(2) {
     width: 60%;
-    transition: 0.3s;
+    transition: var(--transation-duration);
 }
 .links .icon span:nth-child(3) {
     width: 100%;
@@ -117,7 +119,7 @@ body {
 }
 .links ul li {
     padding: 1.5rem;
-    transition: padding 0.2s ease-in-out;
+    transition: padding var(--transation-duration) ease-in-out;
 }
 .links ul li:not(:last-child) {
     border-bottom: 1px solid #ddd;
